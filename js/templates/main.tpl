@@ -1,0 +1,1 @@
+<div>This is the main template of the Blackjack application.</div>
