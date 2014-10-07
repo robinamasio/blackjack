@@ -2,10 +2,6 @@ define(['underscore', 'backbone'],
 function(_, Backbone){
 	var Card = Backbone.Model.extend({
 
-		initialize:function() {
-
-		},
-
 		getDisplayableName: function() {
 			return this.toTitleCase(this.get('level')) + ' of ' + this.toTitleCase(this.get('suit'));
 		},
