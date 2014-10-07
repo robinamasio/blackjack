@@ -1,0 +1,1 @@
+<div class="game deal">{{ dealtTo }} was dealt: {{ name }}</div>
