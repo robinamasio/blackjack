@@ -1,5 +1,9 @@
 define(['underscore', 'backbone', 'models/Card'], 
-function(_, Backbone, Card){
+function(_, Backbone, Card) {
+	/*
+	 * This collection represents a deck of cards which can be shuffled.  A specified number of cards
+	 * can be dealt from the deck into a hand, which is represented by another collection.
+	 */
 	var Deck = Backbone.Collection.extend({
 
 		model: Card,
@@ -20,16 +24,19 @@ function(_, Backbone, Card){
 									}));
 				}
 			}	
-			console.log(this)	;
 		},
 
 		shuffleCards: function() {
-			// shuffle the deck!  Note that because of Backbone collections' built-in shuffle() method
+			// shuffle the deck!  Note that because of Backbone collections' built-in shuffle() method,
+			// the name "shuffle()" could not be used.  The following line of code randomizes the order
+			// of the models in this collection.  The silent:true flag tells Backbone NOT to fire an event
+			// which would tell the outside world that the collection has changed.
 			this.reset(this.shuffle(), { silent:true });			
 		},
 
 		list: function() {
-			// for debugging purposes, list the contents of the deck
+			// This function is here for debugging purposes.  It lists the contents (and size) of the deck
+			// to the console.
 			_(this.models).each(function(model) {
 				console.log(model.getDisplayableName());
 			});
@@ -38,6 +45,8 @@ function(_, Backbone, Card){
 		},
 
 		deal: function(numCards, toHand) {
+			// Deals a specified number of card to the given hand.  If the number of cards requested is
+			// greater than the number of cards in the deck, an error message is printed to the console.
 			var cardCount = parseInt(numCards);
 			if (!isNaN(cardCount)) {
 				if (cardCount > this.models.length) {

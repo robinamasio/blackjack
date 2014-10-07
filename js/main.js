@@ -23,10 +23,10 @@ require.config({
 
 require([
 	'jquery',
-	'app'
-], function($, App) {
+	'router'
+], function($, Router) {
 	$(document).ready(function() {
-		App.initialize();
+		Router.initialize();
 		console.log('app initialized');		
 	});
 });
