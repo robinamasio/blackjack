@@ -1,0 +1,62 @@
+body {
+	margin: 20px;
+}
+
+#main div {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+
+.game {
+	margin: 10px;
+	padding: 10px;	
+}
+
+.greeting {
+	background: rgba(0, 0, 0, .75);
+	font-weight: bold;
+}
+
+.info {
+	background: rgba(0, 0, 255, .5);
+}
+
+.action {
+	display: inline-block;
+	background: rgba(0, 0, 0, .75);
+	width: 130px;
+	text-align: center;
+	border: 2px solid #666;
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.action:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	border: 2px solid #AAA;	
+}
+
+.deal {
+	background: rgba(100, 100, 40, .5);
+}
+
+.to-dealer {
+	background: rgba(50, 50, 20, .5);
+}
+
+.lose {
+	background: rgba(150, 0, 0, .75);
+	font-weight: bold;	
+}
+
+.win {
+	background: rgba(30, 100, 30, .75);
+	font-weight: bold;		
+}
+
+.draw {
+	background: rgba(50, 50, 50, .75);
+	font-weight: bold;		
+}
