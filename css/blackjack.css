@@ -1,0 +1,46 @@
+body {
+	margin: 20px;
+}
+
+#main div {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.game {
+	margin: 10px;
+	padding: 10px;	
+}
+
+.greeting {
+	background: rgba(0, 0, 0, .75);
+	color: #FFF;
+	font-weight: bold;
+}
+
+.info {
+	background: rgba(0, 0, 255, .5);
+	color: #FFF;
+}
+
+.action {
+	display: inline-block;
+	background: rgba(0, 0, 0, .75);
+	color: #FFF;
+	width: 100px;
+	text-align: center;
+	border: 2px solid #666;
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.action:hover {
+	text-decoration: underline;
+	cursor: pointer;
+	border: 2px solid #AAA;	
+}
+
+.deal {
+	background: rgba(100, 150, 100, .5);
+	color: #FFF;
+}
