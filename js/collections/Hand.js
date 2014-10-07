@@ -4,9 +4,6 @@ function(_, Backbone, Card){
 
 		model: Card,
 
-		initialize: function() {
-		},
-
 		getScore: function() {
 			var total = 0;
 			var numAces = 0;

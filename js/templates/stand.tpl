@@ -1,0 +1,1 @@
+<div class="game info">{{ name }} stands with a score of {{ score }}.</div>

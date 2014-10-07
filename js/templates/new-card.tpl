@@ -1,1 +1,1 @@
-<div class="game deal">{{ dealtTo }} was dealt: {{ name }}</div>
+<div class="game deal {{#if toDealer}}to-dealer{{/if}}">{{ dealtTo }} was dealt: {{ name }}.</div>
